@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="origin-when-cross-origin">
   <title>START YOUR JOURNEY NOW!</title>
-  <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b583c373b7ae9c120bc35485-|49"></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"></noscript>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
@@ -212,64 +211,6 @@
       color: #D1D5DB;
     }
   </style>
-  <!-- Meta Pixel Code -->
-  <script type="b583c373b7ae9c120bc35485-text/javascript">
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1447254599695951');
-    // 🔹 Fire PageView
-    fbq('track', 'PageView');
-    // 🔹 Track button clicks
-    function bindClickTracking() {
-      const buttons = [
-        '#applyNow',
-        '#moreOpportunities',
-        '#stickyApplyNow',
-        '#stickyMore'
-      ];
-      buttons.forEach(id => {
-        const btn = document.querySelector(id);
-        if (btn) {
-          btn.addEventListener('click', function(){
-            fbq('trackCustom', 'ClickButton', {
-              button_id: id,
-              value: 30.00,
-              currency: 'NGN'
-            });
-          });
-        }
-      });
-    }
-    // 🔹 Time on page (5s)
-    setTimeout(function(){
-      fbq('trackCustom', 'TimeOnPage', {seconds: 5, value: 30.00, currency: 'NGN'});
-    }, 5000);
-    // 🔹 Hover CTA
-    function bindHoverTracking() {
-      const ctas = document.querySelectorAll('.cta-button, .secondary-cta');
-      ctas.forEach(function(cta){
-        cta.addEventListener('mouseenter', function(){
-          fbq('trackCustom', 'HoverCTA', {
-            button_text: cta.innerText,
-            value: 30.00,
-            currency: 'NGN'
-          });
-        }, { once: true });
-      });
-    }
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1447254599695951&ev=PageView&noscript=1"
-      alt="Meta Pixel tracking image"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 <body>
   <section class="hero-bg">
@@ -279,148 +220,55 @@
       <p class="text-lg md:text-xl mb-6 max-w-2xl">Take surveys anytime, anywhere with your phone. Cash out weekly in your currency. No experience needed – easy to start!</p>
       <button id="applyNow" class="cta-button" aria-label="Start paid surveys">👉 Start Paid Surveys Today</button>
       <button id="moreOpportunities" class="secondary-cta" aria-label="Explore more survey options">🔍 Explore More Survey Options</button>
-      <button id="fakeCta" class="hidden-cta">Hidden CTA</button>
       <input type="text" id="honeypot" class="honeypot" name="bot_field">
       <p class="pulse text-yellow-400 font-bold mt-4">⏳ Spots are limited – Join before registration closes!</p>
     </div>
   </section>
-  <!-- Sticky CTA (Mobile) -->
+
   <div class="sticky-cta sm:hidden flex flex-col space-y-2 text-center">
     <button id="stickyApplyNow" class="cta-button">💸 Join Free – Start Surveys Now</button>
     <button id="stickyMore" class="secondary-cta">🔎 See More Survey Programs</button>
   </div>
+
   <footer>
     <div class="container mx-auto px-4 text-center">
       <p>© 2025 Earn Weekly Online</p>
-      <button onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('privacyModal').classList.remove('hidden')" class="underline text-sm mt-2" data-cf-modified-b583c373b7ae9c120bc35485-="">Privacy Policy</button>
-    </div>
-    <!-- Supercounters (Hidden) -->
-    <div style="display:none; visibility:hidden;">
-      <script type="b583c373b7ae9c120bc35485-text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-      <script type="b583c373b7ae9c120bc35485-text/javascript">
-        sc_online_i(1721459,"ffffff","ffffff");
-      </script>
-      <script id="_waui7h" type="b583c373b7ae9c120bc35485-text/javascript">
-        var _wau = _wau || [];
-        _wau.push(["colored", "58vfdko942", "i7h", "ffffffffffff"]);
-      </script>
-      <script async src="//waust.at/co.js" type="b583c373b7ae9c120bc35485-text/javascript"></script>
+      <a href="https://malawiansadsversion3.blogspot.com/" target="_blank" class="underline text-sm mt-2">Privacy Policy</a>
     </div>
   </footer>
-  <!-- Privacy Modal -->
-  <div id="privacyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" role="dialog" aria-labelledby="privacyTitle">
-    <div class="bg-white rounded-lg p-6 max-w-lg mx-auto text-gray-800 relative">
-      <span class="absolute top-2 right-3 text-2xl cursor-pointer" tabindex="0" role="button" aria-label="Close privacy policy modal" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('privacyModal').classList.add('hidden')" onkeydown="if (!window.__cfRLUnblockHandlers) return false; if(event.key === 'Enter' || event.key === ' ') document.getElementById('privacyModal').classList.add('hidden')" data-cf-modified-b583c373b7ae9c120bc35485-="">
-        ×
-      </span>
-      <h2 id="privacyTitle" class="text-xl font-bold mb-4">Privacy Policy</h2>
-      <p>We respect your privacy. Links redirect to verified earning platforms. We do not collect personal data or fees on this page.</p>
-    </div>
-  </footer>
-  <!-- Redirect + Tracking Script -->
-  <script type="b583c373b7ae9c120bc35485-text/javascript">
-    const trustedDomains = ['visguide.joelwalton.com'];
-    const links = [
-      { url: 'https://www.wineisblue.support/click?offer_id=32065&pub_id=278557&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE/', weight: 0.25 },
-      { url: 'https://www.wineisblue.support/click?offer_id=32065&pub_id=278557&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE/', weight: 0.25 },
-      { url: 'https://www.wineisblue.support/click?offer_id=32065&pub_id=278557&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE/', weight: 0.25 },
-      { url: 'https://www.wineisblue.support/click?offer_id=32065&pub_id=278557&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE/', weight: 0.25 },
-      { url: 'https://www.wineisblue.support/click?offer_id=32065&pub_id=278557&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE/', weight: 0.25 }
-    ];
-    const primaryTexts = [
-      "👉 Start Paid Surveys Today",
-      "✅ Join & Share Your Opinion",
-      "📱 Take Your First Survey Now",
-      "💡 Begin Earning From Surveys",
-      "🚀 Sign Up – Start Rewarding Yourself"
-    ];
-    const secondaryTexts = [
-      "🔍 Explore More Survey Options",
-      "📘 Learn How Surveys Pay",
-      "🌍 See Trusted Platforms",
-      "💼 Browse Extra Earning Ways",
-      "💡 Discover Survey Rewards"
-    ];
-    const stickyPrimaryTexts = [
-      "💸 Join Free – Start Surveys Now",
-      "📱 Tap to Earn From Your Phone",
-      "🚀 Begin Your Survey Journey",
-      "✅ Take Surveys, Get Rewards",
-      "🌍 Start Earning in Minutes"
-    ];
-    const stickySecondaryTexts = [
-      "🔎 See More Survey Programs",
-      "📘 Find Other Reward Options",
-      "💼 Explore Extra Cash Ideas",
-      "💡 Check More Opportunities",
-      "🌍 Discover More Ways to Earn"
-    ];
-    function getRandomText(arr) {
-      return arr[Math.floor(Math.random() * arr.length)];
-    }
-    function weightedRandomLink() {
-      const totalWeight = links.reduce((sum, link) => sum + link.weight, 0);
-      const rand = Math.random() * totalWeight;
-      let sum = 0;
-      for (const link of links) { sum += link.weight; if (rand <= sum) return link.url; }
-      return links[0]?.url || '';
-    }
-    function getCleanUrl(url) {
-      try { return new URL(url).pathname ? url.split('?')[0] : ''; } catch (e) { return ''; }
-    }
-    function proceedToRedirect(link, buttonId) {
+
+  <script>
+    // ✅ YOUR REAL OFFER URL (adult call - offer 34313)
+    const OFFER_URL = "https://www.wineisblue.support/click?offer_id=34313&pub_id=278557&pub_click_id={click_id}&site={subid}&pub_sub_id={sub_subid}";
+
+    function proceedToOffer(buttonId) {
       const honeypot = document.getElementById('honeypot');
-      if (honeypot && honeypot.value !== '') {
-        console.log('Bot detected: honeypot filled');
-        return;
-      }
-      try {
-        const url = new URL(link);
-        if (!trustedDomains.includes(url.hostname)) return;
-        const btn = document.getElementById(buttonId);
-        if (btn) btn.setAttribute('aria-busy', 'true');
-        setTimeout(() => {
-          window.open(getCleanUrl(link), '_blank', 'noopener');
-          if (btn) btn.setAttribute('aria-busy', 'false');
-        }, 800);
-      } catch (e) { console.error('Redirect error:', e); }
+      if (honeypot && honeypot.value !== '') return; // bot trap
+
+      const btn = document.getElementById(buttonId);
+      if (btn) btn.setAttribute('aria-busy', 'true');
+
+      // Open in new tab (safe)
+      setTimeout(() => {
+        window.open(OFFER_URL, '_blank', 'noopener,noreferrer');
+        if (btn) btn.setAttribute('aria-busy', 'false');
+      }, 300);
     }
+
     document.addEventListener('DOMContentLoaded', () => {
-      // Theme shuffling
+      // Theme
       if (!sessionStorage.getItem('theme')) {
         const themes = ['turquoise-navy-white', 'orange-red-white', 'dark-blue-cyan-silver'];
-        const randomTheme = themes[Math.floor(Math.random() * themes.length)];
-        sessionStorage.setItem('theme', randomTheme);
+        sessionStorage.setItem('theme', themes[Math.floor(Math.random() * themes.length)]);
       }
-      const theme = sessionStorage.getItem('theme');
-      document.body.classList.add(`theme-${theme}`);
-      // CTA text handling
-      if (!sessionStorage.getItem("earnCTAs")) {
-        const selected = {
-          primary: getRandomText(primaryTexts),
-          secondary: getRandomText(secondaryTexts),
-          stickyPrimary: getRandomText(stickyPrimaryTexts),
-          stickySecondary: getRandomText(stickySecondaryTexts)
-        };
-        sessionStorage.setItem("earnCTAs", JSON.stringify(selected));
-      }
-      const ctas = JSON.parse(sessionStorage.getItem("earnCTAs"));
-      if (document.getElementById("applyNow")) document.getElementById("applyNow").innerText = ctas.primary;
-      if (document.getElementById("moreOpportunities")) document.getElementById("moreOpportunities").innerText = ctas.secondary;
-      if (document.getElementById("stickyApplyNow")) document.getElementById("stickyApplyNow").innerText = ctas.stickyPrimary;
-      if (document.getElementById("stickyMore")) document.getElementById("stickyMore").innerText = ctas.stickySecondary;
-      // Bind click and hover tracking
-      bindClickTracking();
-      bindHoverTracking();
+      document.body.classList.add(`theme-${sessionStorage.getItem('theme')}`);
+
+      // Buttons
       ['applyNow', 'moreOpportunities', 'stickyApplyNow', 'stickyMore'].forEach(id => {
         const btn = document.getElementById(id);
-        if (btn) {
-          const dest = weightedRandomLink();
-          btn.addEventListener('click', () => proceedToRedirect(dest, id));
-        }
+        if (btn) btn.addEventListener('click', () => proceedToOffer(id));
       });
     });
   </script>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b583c373b7ae9c120bc35485-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"800aecf615724940b045bfddcbed60a0","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9970ff5a4e0dbea6',t:'MTc2MTg5MTExMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
